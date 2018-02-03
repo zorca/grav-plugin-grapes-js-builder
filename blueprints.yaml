@@ -1,0 +1,31 @@
+name: Grapes Js Builder
+version: 0.1.0
+description: GrapesJS Web Builder for Grav CMS
+icon: plug
+author:
+  name: Zorca
+  email: vs@zorca.org
+homepage: https://github.com/zorca/grav-plugin-grapes-js-builder
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/zorca/grav-plugin-grapes-js-builder/issues
+docs: https://github.com/zorca/grav-plugin-grapes-js-builder/blob/develop/README.md
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: Text Variable
+      help: Text to add to the top of a page
